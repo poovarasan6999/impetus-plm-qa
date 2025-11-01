@@ -1,2 +1,10 @@
-# impetus-plm-qa
-Impetus PLM QA is a documentation-based repository for Test Strategy, Test Plan and Test Cases of the Impetus PLM application. It defines QA scope, risk-based priorities (P0–P3), roles and lifecycle rules, data strategy, SAP fallback (@blocked-sap), and release gates for 100 % P0 quality compliance.
+**Impetus PLM QA** is a documentation-driven quality assurance repository built to define and maintain the complete testing lifecycle for the Impetus PLM application. It centralizes three key areas—**Test Strategy**, **Test Plan**, and **Test Cases**—providing a structured, traceable, and auditable QA process for a consumer-centric PLM platform.
+
+The **Test Strategy** establishes the long-term vision and QA methodology. It defines test levels such as Unit, API, UI, Integration, Regression, Smoke, Sanity, Load, and Exploratory testing. Risk-based prioritization (P0–P3) ensures critical business workflows are always validated first. The strategy also includes non-functional validation for performance, data integrity, security, and accessibility. Every lifecycle stage—Designer, Buyer, Technical Designer, Product Manager, and Vendor—is covered with defined entry and exit criteria, mandatory fields, promotion rules, and blockers. It introduces an integration fallback policy: *If the SAP sandbox is unavailable, execute contract tests against a mock API, verify audit logs, and tag the scenario @blocked-sap.*
+
+The **Test Plan** focuses on release execution, covering sprint timelines, environments (DEV, QA, UAT, STAGE), test schedules, resources, entry and exit criteria, and daily or weekly reporting cadence. It ensures that 100 % of P0 tests must pass, overall test pass rate exceeds 95 %, and no Severity 1 or 2 defects remain open before go-live.
+
+The **Test Cases** section maintains all manual scenarios in Excel or CSV format, clearly mapped to requirements and datasets. Each case contains ID, module, user role, preconditions, steps, expected results, dataset reference, severity, and risk level.
+
+Impetus PLM QA provides a scalable foundation for consistent, repeatable testing. It enables transparent collaboration among QA, Product, and Engineering teams while laying the groundwork for future automation using Playwright and Cursor AI. This repository represents a disciplined, business-driven QA model designed to ensure accuracy, stability, and confidence in every Impetus PLM release.
+
